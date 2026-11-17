@@ -1,0 +1,35 @@
+import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+
+class NotFoundPage extends StatelessWidget {
+  const NotFoundPage({required this.path, super.key});
+
+  final String path;
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(24),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Icon(Icons.explore_off_outlined, size: 56),
+            const SizedBox(height: 12),
+            Text(
+              'Halaman tidak ditemukan',
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
+            const SizedBox(height: 6),
+            Text('Alamat "$path" tidak tersedia.'),
+            const SizedBox(height: 16),
+            FilledButton(
+              onPressed: () => context.go('/'),
+              child: const Text('Kembali ke beranda'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
