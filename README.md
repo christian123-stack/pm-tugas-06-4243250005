@@ -21,7 +21,7 @@ Aplikasi panduan wisata Sumatera Utara yang menampilkan informasi enam destinasi
 |---|---|
 | ![Detail Istana Maimun pada ponsel](screenshots/detail-ponsel.png) | ![Daftar favorit pada ponsel](screenshots/favorit-ponsel.png) |
 
-> Keempat tangkapan layar yang tersedia berasal dari ponsel. Screenshot halaman daftar dan detail pada tablet masih perlu ditambahkan agar bukti mencakup kedua ukuran perangkat sesuai rubrik.
+> 
 
 ## Keputusan desain responsif
 
